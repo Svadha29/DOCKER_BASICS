@@ -27,7 +27,7 @@ Streamlit-Postgres-Docker/
 ```bash
 docker pull postgres
 ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9408e84c9fda1eb634c4c5e3c41e29db330b1557/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked/images/image.png)
 ---
 
 ### Step 2: Create a Docker Network
@@ -35,6 +35,7 @@ docker pull postgres
 ```bash
 docker network create my_postgres_network
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9408e84c9fda1eb634c4c5e3c41e29db330b1557/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked/images/image%20copy.png)
 > This allows PostgreSQL and Streamlit containers to talk to each other.
 
 ---
@@ -121,7 +122,7 @@ CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.
 ```bash
 docker build -t streamlit_app .
 ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9408e84c9fda1eb634c4c5e3c41e29db330b1557/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked/images/image%20copy%202.png)
 ---
 
 ### Step 9: Run the Streamlit Container
@@ -143,6 +144,7 @@ docker run --name my_streamlit_container \
 **[http://localhost:8501](http://localhost:8501)**
 
 You will see the list of passengers beautifully displayed!
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9408e84c9fda1eb634c4c5e3c41e29db330b1557/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked/images/image%20copy%203.png)
 
 ---
 
@@ -167,7 +169,7 @@ You will see the list of passengers beautifully displayed!
   ```bash
   docker rmi <image_name>
   ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9408e84c9fda1eb634c4c5e3c41e29db330b1557/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked/images/image%20copy%204.png)
 ---
 
 ## 🎯 Summary
