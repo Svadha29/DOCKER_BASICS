@@ -13,6 +13,7 @@ You executed:
 ```bash
 docker run -dit --name alpine_with_bind_mount -v ~/docker_data:/data alpine:latest sh
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/7e9ed08f7af8e959963539bb1249af644987197e/5.%20Docker%20Volume%20Persistence/images/image.png)
 
 #### 🔍 What Happened?
 - Since `alpine:latest` was not found locally, Docker pulled it from the official repository.
@@ -27,6 +28,7 @@ Inside the container, you created a file:
 ```bash
 docker exec -it alpine_with_bind_mount sh -c "echo 'Hello, Svadha!' > /data/testfile.txt"
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/7e9ed08f7af8e959963539bb1249af644987197e/5.%20Docker%20Volume%20Persistence/images/image%20copy.png)
 
 #### 🔍 What Happened?
 - The command executed a shell inside the running container.
@@ -40,11 +42,12 @@ To check the contents:
 ```bash
 docker exec -it alpine_with_bind_mount sh -c "cat /data/testfile.txt"
 ```
-
 #### 📌 Output:
 ```
 Hello, Svadha!
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/7e9ed08f7af8e959963539bb1249af644987197e/5.%20Docker%20Volume%20Persistence/images/image%20copy%202.png)
+
 This confirms that the file was successfully created and accessible inside the container. 🎉
 
 ---
@@ -54,6 +57,7 @@ You removed the container:
 ```bash
 docker rm -f alpine_with_bind_mount
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/7e9ed08f7af8e959963539bb1249af644987197e/5.%20Docker%20Volume%20Persistence/images/image%20copy%204.png)
 
 #### 🔍 What Happened?
 - The container was **forcefully stopped and removed**.
@@ -66,6 +70,7 @@ You started a new container:
 ```bash
 docker run -dit --name new_alpine -v ~/docker_data:/data alpine:latest sh
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/7e9ed08f7af8e959963539bb1249af644987197e/5.%20Docker%20Volume%20Persistence/images/image%20copy%205.png)
 
 #### 🔍 What Happened?
 - A new container named **new_alpine** was created.
@@ -83,6 +88,8 @@ docker exec -it new_alpine sh -c "cat /data/testfile.txt"
 ```
 Hello, Svadha!
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/7e9ed08f7af8e959963539bb1249af644987197e/5.%20Docker%20Volume%20Persistence/images/image%20copy%206.png)
+
 This confirms that **bind mounts persist data even after a container is removed**. 🔥
 
 ---
