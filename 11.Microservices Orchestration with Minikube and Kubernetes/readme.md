@@ -25,6 +25,7 @@ Start Minikube with Docker as the driver:
 ```bash
 minikube start --driver=docker
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9440b8c5b031c3a8a14bbea65317c22bd417b2d5/11.Microservices%20Orchestration%20with%20Minikube%20and%20Kubernetes/images/image%20copy%202.png)
 
 This command initializes a Kubernetes cluster within Docker containers.
 
@@ -53,7 +54,7 @@ Navigate to your project directory and deploy the **backend** and **API Gateway*
     ```bash
     docker build -t backend-service .
     ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/efd88de86b8b671556797a0e67c62c2e04a725c0/11.Microservices%20Orchestration%20with%20Minikube%20and%20Kubernetes/images/image.png)
 3. Apply the Kubernetes deployment for the backend service:
 
     ```bash
@@ -73,6 +74,7 @@ Navigate to your project directory and deploy the **backend** and **API Gateway*
     ```bash
     docker build -t api-gateway .
     ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9440b8c5b031c3a8a14bbea65317c22bd417b2d5/11.Microservices%20Orchestration%20with%20Minikube%20and%20Kubernetes/images/image%20copy%203.png)
 
 3. Apply the Kubernetes deployment for the API Gateway:
 
@@ -88,6 +90,7 @@ To check the status of your services and deployments:
 kubectl get deployments
 kubectl get services
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/9440b8c5b031c3a8a14bbea65317c22bd417b2d5/11.Microservices%20Orchestration%20with%20Minikube%20and%20Kubernetes/images/image%20copy%204.png)
 
 ### 6️⃣ Expose and Access the Application
 
@@ -102,6 +105,7 @@ To access the **API Gateway** service, use the following command:
 ```bash
 minikube service api-gateway --url
 ```
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/efd88de86b8b671556797a0e67c62c2e04a725c0/11.Microservices%20Orchestration%20with%20Minikube%20and%20Kubernetes/images/image%20copy.png)
 
 This command will provide a URL where you can access the API Gateway in your browser.
 
