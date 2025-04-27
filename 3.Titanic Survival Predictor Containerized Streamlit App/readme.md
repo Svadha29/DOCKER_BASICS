@@ -86,18 +86,18 @@ cd Titanic-Prediction-Model
 ```bash
 docker build -t titanic-prediction .
 ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/ec791ebdabe00d81247202218696aa2b79c43027/3.Titanic%20Survival%20Predictor%20Containerized%20Streamlit%20App/images/image%20copy.png)
 ### **3️⃣ Run the Docker Container**
 ```bash
 docker run -p 8501:8501 titanic-prediction
 ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/ec791ebdabe00d81247202218696aa2b79c43027/3.Titanic%20Survival%20Predictor%20Containerized%20Streamlit%20App/images/image%20copy%202.png)
 ### **4️⃣ Access the Application**
 Open your browser and navigate to:
 ```
 http://localhost:8501
 ```
-
+![img](https://github.com/Svadha29/DOCKER_BASICS/blob/ec791ebdabe00d81247202218696aa2b79c43027/3.Titanic%20Survival%20Predictor%20Containerized%20Streamlit%20App/images/image.png)
 
 ---
 
